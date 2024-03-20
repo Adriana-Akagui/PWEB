@@ -1,0 +1,149 @@
+@media screen and (max-width: 1015px) {
+    .reponsivo {
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+body{
+    background-color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a21d21;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+  
+.logo {
+    padding: 10px; 
+}
+  
+.logo img {
+    max-width: 100px; 
+}
+
+.menu {
+    background-color: #a21d21;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.menu ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    padding: 5px 10px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.noticias {
+    background-color:#FFF;
+    display:flex;
+    padding:4px 8px;
+    color:#000;
+    margin-top: 120px;
+}
+
+.noticias__esquerda {
+    display:flex;
+    width: 40%;
+	height: 100px;
+    padding:4px 8px;
+}
+
+.noticias__direita {
+	float: left;
+	width: 60%;
+	min-height: 400px;
+    padding:4px 8px;
+}
+
+.noticias .noticias__esquerda img {
+    max-width: auto;
+    height: 400px;
+}
+
+.noticias .noticias__direita img {
+    max-width: 200px;
+    max-height: auto;
+}
+
+.noticias__direita_emcima {
+    display: flex;
+    padding:4px 8px;
+} 
+
+.noticias__direita_emcima .noticia02 {
+    margin-right: 30px;
+}
+
+.noticias__direita_emcima .noticia03 {
+    margin-right: 30px;
+}
+
+
+.noticias__direita_embaixo {
+	width: 100%;
+	height: auto;
+    padding:4px 8px;
+}
+
+
+.noticias .noticias__direita_embaixo img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.noticias h2, h1 {
+    color: #a21d21;
+}
+
+.noticias p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.foto__titulo {
+    background-color: #a21d21;
+    color: #FFF;
+    height: 40px;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.fotos img {
+    max-width: 200px;
+    max-height: auto;
+}
+  
+footer {
+    margin-top: 40px;
+    background-color: #a21d21;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+  
+
+  
