@@ -1,0 +1,82 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+div {
+    width: 500px;
+	height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+    div {
+        background-color: darkgreen;
+    }
+
+    h1::after {
+        content: "Verde Escuro";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    div {
+        background-color: orange;
+    }
+
+    h1::after {
+        content: "Laranja";
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    div {
+        background-color: pink;
+    }
+
+    h1::after {
+        color: #000;
+        content: "Rosa";
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1080px) {
+    div {
+        background-color: red;
+    }
+
+    h1::after {
+        content: "Vermelho";
+    }
+}
+
+@media screen and (min-width: 1079px) and (max-width: 1366px) {
+    div {
+        background-color: purple;
+    }
+
+    h1::after {
+        content: "Roxo";
+    }
+}
+
+@media screen and (min-width: 1365px) and (max-width: 1920px) {
+    div {
+        background-color: yellow;
+    }
+
+    h1::after {
+        color: #000;
+        content: "Amarelo";
+    }
+}
+
+@media screen and (min-width: 1919px){
+    div {
+        background-color: #000;
+    }
+
+}
