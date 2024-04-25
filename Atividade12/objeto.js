@@ -77,6 +77,7 @@ function contaBanco() {
         constructor() {
             super();
             this.saldoEspecial = 0;
+
         }
 
         getSaldoEspecial() {
@@ -95,8 +96,8 @@ function contaBanco() {
     class ContaPoupanca extends Conta {
         constructor() {
             super();
-            this.juros;
-            this.dataVencimento;
+            this.juros = 0;
+            this.dataVencimento = "";
         }
 
         getJuros() {
@@ -117,7 +118,9 @@ function contaBanco() {
 
         getTotalComJuros() {
             return this.getSaldo() * (1 + this.getJuros() / 100);
+            
         }
+
     }
 
     var objconta = new Conta();
@@ -127,16 +130,20 @@ function contaBanco() {
     objconta.setSaldo(parseFloat(prompt("Saldo: ")));
     objconta.setTipoConta(prompt("Tipo de conta (corrente ou poupança): "));
 
+
     if (objconta.getTipoConta() === 'corrente') {
-
         var objcontaCorrente = new ContaCorrente();
+        objcontaCorrente.setSaldo(objconta.getSaldo()); 
+        /*objcontaCorrente.setSaldoEspecial(parseFloat(prompt("Saldo especial: ")));*/ 
         objcontaCorrente.setSaldoEspecial(1000);
-
+        
         alert("Tipo de conta: Corrente" + "\nNome: " + objconta.getNome() + "\nBanco: " + objconta.getBanco() + "\nConta: " + objconta.getConta() + "\nSaldo: RS" + objconta.getSaldo() + "\nSaldo especial: " + objcontaCorrente.getSaldoEspecial() + "\nSaldo total: R$" + objcontaCorrente.getTotalSaldo());
+ 
 
     } else if (objconta.getTipoConta() === 'poupança') {
 
         var objcontaPoupanca = new ContaPoupanca();
+        objcontaPoupanca.setSaldo(objconta.getSaldo());
         objcontaPoupanca.setDataVencimento("24/04");
         objcontaPoupanca.setJuros(0.5);
 
