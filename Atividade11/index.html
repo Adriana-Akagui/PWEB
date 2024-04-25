@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11 - Objeto</title>
+
+    <script>
+
+        var funcionario1 = new Object(),
+            aleat = Math.random(),
+            obj = new Object();
+    
+            funcionario1.nome = "Adriana";
+            funcionario1.matricula = "1235";
+            funcionario1.funcao = "Design"
+
+        alert("nome: " + funcionario1.nome + "\nmatricula: " + funcionario1.matricula +"\nfunção: " + funcionario1.funcao);
+      
+
+        var funcionario2 = {
+            nome: "Danielle",
+            matricula: "1236",
+            funcao: "Full Stack"
+        };
+        alert("nome: " + funcionario2.nome + "\nmatricula: " + funcionario2.matricula + "\nfunção: " + funcionario2.funcao);
+
+        var funcionario3 = {};
+        funcionario3["nome"] = "Fraciele";
+        funcionario3["matricula"] = "1234";
+        funcionario3["funcao"] = "Dev"
+        alert("nome: " + funcionario3.nome + "\nmatricula: " + funcionario3.matricula + "\nfunção:" + funcionario3.funcao);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
