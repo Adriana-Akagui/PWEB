@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13 - Janela</title>
+</head>
+<body>
+    <div>
+        <h1>Abra a janela!!</h1>
+        <img id="img" src="janelafechada.png" onmousedown="mDow(this)" onmouseover="mMover(this)" onmouseout="mOut(this)" style="width:400px;height:540px;">
+    </div>
+    <script>        
+        
+        function mDow(obj) {
+            var image = document.getElementById("img");
+            image.src = "janelaquebra.png"; 
+        }
+
+        function mMover() {
+            var image = document.getElementById("img");
+            image.src = "janelaaberta.png"; 
+        }
+        
+        function mOut() {
+            var image = document.getElementById("img");
+            image.src = "janelafechada.png"; 
+        }
+    </script>
+</body>
+</html>
