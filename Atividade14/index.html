@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Maiúsculo e Minúsculo</title>
+</head>
+<body>
+    <p>Maiúsculo e Minúsculo</p>
+
+    <input type="text" id="texto" size=20>
+    <br>
+    <br>
+    Maiúsculo: <input type="checkbox" id="maiusculo">
+    Minúsculo: <input type="checkbox" id="minusculo">
+    <button onclick="executa();">clique aqui</button>
+
+    <script>
+
+        document.getElementById("maiusculo").onclick = function() {
+            checkUncheck('maiusculo');
+        };
+
+        document.getElementById("minusculo").onclick = function() {
+            checkUncheck('minusculo');
+        };
+        function executa(){
+            var texto = document.getElementById("texto").value;
+            var checkboxMaiusculo = document.getElementById("maiusculo").checked;
+            var checkboxMinusculo = document.getElementById("minusculo").checked;
+
+            if (checkboxMaiusculo) {
+                texto = texto.toUpperCase();
+            } else if (checkboxMinusculo) {
+                texto = texto.toLowerCase();
+            }
+
+            document.getElementById("texto").value = texto;
+        }
+
+        function checkUncheck(id) {
+            var checkboxMaiusculo = document.getElementById("maiusculo");
+            var checkboxMinusculo = document.getElementById("minusculo");
+
+            if (id === 'maiusculo' && checkboxMaiusculo.checked) {
+                checkboxMinusculo.checked = false;
+            } else if (id === 'minusculo' && checkboxMinusculo.checked) {
+                checkboxMaiusculo.checked = false;
+            }
+        }
+    </script>
+    
+</body>
+</html>
