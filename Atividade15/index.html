@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15 - Função validar</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Formulário Principal</h1>
+    <hr>
+    <form method="POST" name="formulario" id="formulario" onsubmit="return validarDados();">
+
+        <div id="principal">
+            Nome :
+            <br>
+            <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <br> E-Mail :
+            <br>
+            <input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <br> Comentário :
+            <br>
+            <textarea name="idMensagem" cols="50" rows="8" id="idMensagem" value="" input></textarea>
+            <br>
+            <br>
+            <p id="primeiro"> Primiera vez na página? </p>
+            <br>
+            Sim<input type="radio" name="check">
+            Não<input type="radio" name="check">
+            <br>
+            <br>
+            <br>
+            <input name="Enviar" type="submit" form="formulario" value="Enviar">
+            <input name="Limpar" type="reset" form="formulario" value="Limpar">
+        </div>
+    </form>
+    
+    <script src="funcoes.js"></script>
+    
+</body>
+</html>
