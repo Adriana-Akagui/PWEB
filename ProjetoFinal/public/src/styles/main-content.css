@@ -1,0 +1,209 @@
+.main-container {
+    height: 100vh;
+    margin-left: 194px;
+
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 229, 229, 1);
+    padding: 10px;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.navigation .arrow-left,
+.navigation .arrow-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation .arrow-left {
+    left: 0;
+}
+
+.navigation .arrow-right {
+    right: 0;
+}
+
+.navigation .text {
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: transparent
+}
+
+.text_mes {
+    font-size: 30px;
+    color: rgba(103, 48, 36, 1);
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 38px;
+    background-color: rgba(103, 48, 36, 1);
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 20px; 
+}
+
+.header__search input {
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0px 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header__search input::placeholder {
+    color: #fff;
+}
+
+.header__search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__filtro {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 38px;
+    background-color: rgba(103, 48, 36, 1);
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    position: relative;
+}
+
+.column {
+    background-color: rgba(103, 48, 36, 0.4);
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.column.short {
+    height: 72px;
+    font-size: 30px;
+    z-index: 1; 
+    
+}
+.column.tall {
+    height: 839px;
+    z-index: 1; 
+}
+
+
+
+.header__search:hover {
+  border: 1px solid #fff;
+}
+
+.header__filtro .subscribe:hover {
+  transform: scale(1.04);
+  color: #fff;
+  width: 16px;
+  color: rgba(103,48,36,1);
+  font-family: League Spartan;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Adicione estas regras CSS ao seu arquivo de estilos
+
+.post-it {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.post-it:hover {
+    transform: translateY(-3px);
+}
+
+.pessoal {
+    background-color: #ffcccc;
+}
+
+.profissional {
+    background-color: #ccffcc;
+}
+
+.acadêmico {
+    background-color: #ccccff;
+}
+
+.lazer {
+    background-color: #ffccff;
+} */
+
+
+.evento {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.evento.pessoal {
+    background-color: pink;
+}
+
+.evento.profissional {
+    background-color: lightgreen;
+}
+
+.evento.academico {
+    background-color: blue;
+}
+
+.evento.lazer {
+    background-color: violet;
+}
+
+
+

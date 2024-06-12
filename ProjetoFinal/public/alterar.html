@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar tarefa</title>
+    <link rel="stylesheet" href="./src/styles/styles-alterar.css" />
+    <link rel="stylesheet" href="./src/styles/media-queries-add.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <span>Alterar Tarefa</span>
+    </header>
+
+    <div class="titulo" id="titulo-tarefa">
+        <!-- Título da tarefa vai aqui -->
+    </div>
+
+    <div class="tipo" id="tipo">
+        <!-- Tipo da tarefa vai aqui -->
+    </div>
+
+    <main class="container">
+        <div class="form">
+            <div class="post__data">
+                <span class="data_text">data</span><br>
+                <span class="fa fa-calendar"></span>
+                <input type="date" id="data" name="data" class="input__date">
+            </div>
+
+            <div class="horario">
+                <span class="data_text">horário</span><br>
+                <span class="fa fa-clock"></span>
+                <label for="horario_inicial">horário inicial:</label>
+                <select id="horario_inicial" class="input__time">
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+
+                <label for="horario_final">horário final:</label>
+                <select id="horario_final" class="input__time">
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="07:00">07:00</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+
+                <div>
+                    <input type="checkbox" id="dia_todo" nome="dia_todo" value="dia_todo">
+                    <label for="dia_todo">Dia Todo</label>
+                </div>
+            </div>
+
+            <div class="post__prioridade">
+                <p class="prioridade_text">qual a prioridade</p>
+                <input type="checkbox" id="urgente" name="prioridade" value="urgente">
+                <img class="prioridade-img" src="./src/assets/relogio.png" alt="Urgente"> urgente<br>
+
+                <input type="checkbox" id="importante" name="prioridade" value="importante">
+                <img class="prioridade-img" src="./src/assets/estrela.png" alt="Importante"> importante<br>
+
+                <input type="checkbox" id="poucourgente" name="prioridade" value="poucourgente">
+                <img class="prioridade-img" src="./src/assets/coracao.png" alt="Pouco Urgente"> pouco urgente<br>
+
+                <input type="checkbox" id="podeesperar" name="prioridade" value="podeesperar">
+                <img class="prioridade-img" src="./src/assets/pin.png" alt="Pode Esperar"> pode esperar
+            </div>
+
+            <div class="post__descricao">
+                <label for="descricao">Descrição:</label><br>
+                <textarea id="descricao" class="input__textarea" rows="6"></textarea>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="post__status">
+                <h4 class="tipo__text">Status</h4>
+                <input type="checkbox" name="status" value="pendente" id="pendente">
+                <label for="pendente">Pendente</label><br>
+                <input type="checkbox" name="status" value="encerrado" id="encerrado">
+                <label for="encerrado">Encerrado</label><br>
+            </div>
+
+            <div class="post__feedback">
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" class="input__textarea" placeholder="Digite aqui..." rows="8"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button class="alterar__button" id="alterar__button"><span class="fa fa-pen"></span> Alterar</button>
+                <button class="cancelar__button" id="cancelar__button"><span class="fa fa-times"></span> Cancelar</button>
+                <button class="excluir__button" id="excluir__button"><span class="fas fa-trash"></span> Excluir</button>
+                <button class="salvar__button" id="salvar__button" disabled><span class="fa fa-save"></span> Salvar</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="./src/js/alterar.js"></script>
+
+</body>
+
+</html>

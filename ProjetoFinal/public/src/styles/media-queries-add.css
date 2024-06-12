@@ -1,0 +1,99 @@
+@media (min-width: 1025px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .form {
+      width: 45%;
+    }
+  
+  }
+  
+  /* Tablet: Largura entre 768px e 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form {
+      width: 80%;
+    }
+  
+    .buttons {
+      margin-left: 10%;
+    }
+  
+    .input__titulo {
+      font-size: 25px;
+    }
+  
+    .post__prioridade, .post__data, .post__descricao {
+      width: 100%;
+    }
+  }
+  
+  /* Celular: Largura menor que 768px */
+  @media (max-width: 767px) {
+    .header {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .input__titulo {
+      font-size: 20px;
+    }
+  
+    .input__titulo input {
+      padding: 0px 20px 0px 12px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form {
+      width: 95%;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+
+  
+    .post__prioridade, .post__data, .post__descricao {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .horario label, .horario select, .horario input[type="checkbox"] {
+      font-size: 16px;
+    }
+  
+    .horario select {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .input__date {
+      width: 100%;
+    }
+  
+    .input__textarea {
+      font-size: 16px;
+    }
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  

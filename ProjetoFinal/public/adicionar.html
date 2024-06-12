@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionar tarefa</title>
+    <link rel="stylesheet" href="./src/styles/styles-adicionar.css" />
+    <link rel="stylesheet" href="./src/styles/media-queries-add.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <span>criar tarefa</span>
+    </header>
+
+    <div class="input__titulo">
+        <input type="text" id="titulo" name="titulo" class="titulo" maxlength="800" autocorrect="off" autocapitalize="off" spellcheck="false"
+            placeholder="título" value="" />
+    </div>
+
+    <main class="container">
+        <div class="form">
+            <form id="adicionarForm" method="post">
+                <div class="post__tipo">
+                    <h4 class="tipo__text">tipo</h4>
+                    <input type="checkbox" id="pessoal" name="tipo" value="pessoal">
+                    <span class="quadrado_rosa"></span>pessoal <br>
+                    <input type="checkbox" id="profissional" name="tipo" value="profissional">
+                    <span class="quadrado_verde"></span>profissional <br>
+                    <input type="checkbox" id="academico" name="tipo" value="academico">
+                    <span class="quadrado_azul"></span>acadêmico <br>
+                    <input type="checkbox" id="lazer" name="tipo" value="lazer">
+                    <span class="quadrado_violeta"></span>lazer <br>
+                </div>
+
+                <div class="post__prioridade">
+                    <p class="prioridade_text">qual a prioridade</p>
+                    <input type="checkbox" id="urgente" name="prioridade" value="urgente">
+                    <img class="prioridade-img" src="./src/assets/relogio.png" alt="Urgente"> urgente<br>
+
+                    <input type="checkbox" id="importante" name="prioridade" value="importante">
+                    <img class="prioridade-img" src="./src/assets/estrela.png" alt="Importante"> importante<br>
+
+                    <input type="checkbox" id="poucourgente" name="prioridade" value="poucourgente">
+                    <img class="prioridade-img" src="./src/assets/coracao.png" alt="Pouco Urgente"> pouco urgente<br>
+
+                    <input type="checkbox" id="podeesperar" name="prioridade" value="podeesperar">
+                    <img class="prioridade-img" src="./src/assets/pin.png" alt="Pode Esperar"> pode esperar
+                </div>
+
+                <div class="post__data">
+                    <span class="data_text">escolha da data</span><br>
+                    <span class="fa fa-calendar"></span>
+                    <input type="date" id="data" name="data" class="input__date">
+                </div>
+
+                <div class="horario">
+                    <span class="data_text">escolha o horário</span><br>
+                    <span class="fa fa-clock"></span>
+                    <label for="horario_inicial">horário inicial:</label>
+                    <select id="horario_inicial" name="horario_inicial" class="input__time">
+                        <option value="" selected>Selecionar</option>
+                        <option value="07:00">07:00</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                    </select>
+
+                    <label for="horario_final">horário final:</label>
+                    <select id="horario_final" name="horario_final" class="input__time">
+                        <option value="" selected>Selecionar</option>
+                        <option value="07:00">07:00</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                    </select>
+
+                    <div>
+                        <input type="checkbox" id="dia_todo" name="dia_todo" value="dia_todo">
+                        <label for="dia_todo">Dia Todo</label>
+                    </div>
+                </div>
+
+                <div class="post__descricao">
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" class="input__textarea" placeholder="Digite aqui..." rows="4"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="cancelar__button" id="cancelar__button"><span class="fa fa-times"></span> Cancelar</button>
+                    <button type="submit" class="salvar__button" id="salvar__button"><span class="fa fa-save"></span> Salvar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./src/js/functions.js"></script>
+    <script src="./src/js/adicionar.js"></script>
+</body>
+</html>

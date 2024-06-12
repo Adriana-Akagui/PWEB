@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto - Agenda</title>
+    <link rel="shortcut icon" href="./src/assets/agenda.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main-content.css" />
+    <link rel="stylesheet" href="./src/styles/sidebar-footer.css" />
+    <link rel="stylesheet" href="./src/styles/media-queries.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="logo">
+                <a href="">
+                    <img src="./src/assets/agenda.png" alt="Ícone Agenda">
+                </a>
+            </div>
+            <ul>
+                <p>minha</p>
+                <p>semana</p>
+            </ul>
+        </nav>
+
+        <div class="library">
+            <div class="library__button">
+                <button class="criarevento__button" id="criarevento__button">
+                    <span class="fa fa-plus"></span>
+                    <span>criar evento</span>
+                </button>
+            </div>
+
+            <section class="section-calendar">
+                <div class="section-calendar__content">
+                    <button class="arrow-left" id="prev">
+                        <img src="./src/assets/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <span class="text-title" id="calendar-title"></span>
+                    <button class="arrow-right" id="next">
+                        <img src="./src/assets/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                <div id="calendar"></div>
+
+            </section>
+
+            <div class="importante">
+                <span>importante</span>
+                <ul id="lista-importantes" class="list-group"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left" id="prev">
+                        <img src="./src/assets/small-left.png" alt="Seta esquerda">
+                    </button>
+
+                    <button class="text">hoje</button>
+
+                    <button class="arrow-right" id="next">
+                        <img src="./src/assets/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                <p class="text_mes">maio 2024</p>
+
+                <div class="header__right">
+                    <div class="header__search">
+                        <img src="./src/assets/search.png" alt="">
+                        <input id="search-input" maxlength="800" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" placeholder="pesquisar" value="" />
+                    </div>
+
+                    <select class="header__filtro" id="header__filtro" nome="header__filtro"> 
+                        <option value="pessoal">pessoal</option>
+                        <option value="profissional">profissional</option>
+                        <option value="acadêmico">acadêmico</option>
+                        <option value="laser">laser</option>
+                    </select>
+                </div>
+            </nav>
+
+            <section class="columns" id="columns" nome="columns">
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <div class="column short"></div>
+                <ul class="column tall" id="domingo"></ul>
+                <ul class="column tall" id="segunda"></ul>
+                <ul class="column tall" id="terca"></ul>
+                <ul class="column tall" id="quarta"></ul>
+                <ul class="column tall" id="quinta"></ul>
+                <ul class="column tall" id="sexta"></ul>
+                <ul class="column tall" id="sabado"></ul>
+            </section>
+        </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="./src/js/functions.js"></script>
+    <script src="./src/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(103, 48, 36, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(103, 48, 36, 1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 72px;
+    margin-top: 0;
+    width: 100%;
+    font-size: 40px;
+}
+
+.titulo {
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+    padding: 20px;
+    margin-left: auto;
+}
+
+.form input[type="checkbox"] {
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+.post__descricao {
+    width: 100%;
+    padding: 20px 10px 10px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.post__feedback {
+    width: 100%;
+    padding: 50px 10px 10px 0px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.input__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid rgba(103, 48, 36, 1);
+    border-radius: 10px;
+    resize: vertical;
+}
+
+
+.buttons {
+    padding: 50px 10px 10px 0px;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.buttons button {
+    padding: 20px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    background-color: rgba(255, 229, 229, 1);
+    color: rgba(103, 48, 36, 1);
+}
+
+.post__data {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .post__data span {
+    margin-right: 10px;
+  }
+  
+  .input__date {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgba(103, 48, 36, 1);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .post__horario {
+    width: 50%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+    clear: both;
+  }
+  
+  .horario {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .horario label,
+  .horario select,
+  .horario input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .horario select {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  
+  .horario input[type="checkbox"] {
+    margin-top: 10px;
+  }
+
+  .post__prioridade {
+    background-color: rgba(103, 48, 36, 1);
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 5px 50px 10px;
+    width: 400px;
+  }
+  
+  .prioridade-img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .prioridade_text {
+    font-weight: bold;
+  }

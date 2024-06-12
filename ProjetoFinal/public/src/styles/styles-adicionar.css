@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 229, 229, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgba(103, 48, 36, 1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  height: 72px;
+  margin-top: 0;
+  width: 100%;
+  font-size: 40px;
+}
+
+.input__titulo {
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  color: rgba(103, 48, 36, 1);
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+#titulo {
+  width: 100%;
+  font-size: inherit;
+  outline: none;
+}
+
+.input__titulo input {
+  background: transparent;
+  border: none;
+  padding: 0px 100px 0px 12px;
+  color: rgba(103, 48, 36, 1);
+  text-overflow: ellipsis;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form {
+  width: 50%;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.tipo__text {
+  background-color: rgba(103, 48, 36, 1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.form input[type="checkbox"] {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+.quadrado_rosa,
+.quadrado_verde,
+.quadrado_azul,
+.quadrado_violeta {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.quadrado_rosa {
+  background-color: pink;
+}
+
+.quadrado_verde {
+  background-color: greenyellow;
+}
+
+.quadrado_azul {
+  background-color: blue;
+}
+
+.quadrado_violeta {
+  background-color: violet;
+}
+
+.post__prioridade {
+  background-color: rgba(103, 48, 36, 1);
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 5px 50px 10px;
+  width: 400px;
+}
+
+.prioridade-img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.prioridade_text {
+  font-weight: bold;
+}
+
+.post__data {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.post__data span {
+  margin-right: 10px;
+}
+
+.input__date {
+  padding: 10px;
+  border: 2px solid rgba(103, 48, 36, 1);
+  border-radius: 10px;
+  width: 50%;
+  background-color: rgba(103, 48, 36, 1);
+  color: #fff;
+  font-size: 20px;
+}
+
+.post__horario {
+  width: 50%;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+  clear: both;
+}
+
+.horario {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.horario label,
+.horario select,
+.horario input[type="checkbox"] {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.horario select {
+  padding: 10px;
+  border: 2px solid rgba(103, 48, 36, 1);
+  border-radius: 10px;
+}
+
+.horario input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+.post__descricao {
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.input__textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid rgba(103, 48, 36, 1);
+  border-radius: 10px;
+  resize: vertical;
+  margin-top: 5px;
+}
+
+.post__descricao span {
+  background-color: rgba(103, 48, 36, 1);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 20px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 200px;
+  color: rgba(255, 229, 229, 1);
+  background-color: rgba(103, 48, 36, 1);
+}
