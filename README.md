@@ -4,20 +4,20 @@ Repositório criado para as atividades da disciplina de Programação Web do cur
 
 ## Atividades Realizadas
 
-### Atividade 2
+### [Atividade 2](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade2)
 - **Descrição**: Escolher um tema e fazer uma pesquisa, que será utilizada na próxima atividade.
 
-### Atividade 3
+### [Atividade 3](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade3)
 - **Descrição**: Montar uma página com as informações da pesquisa da atividade 2. Criar os documentos HTML e CSS.
 
-### Atividade 4
+### [Atividade 4](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade4)
 - **Descrição**: Criar um site de notícias utilizando flexbox e DIVs.
 
-### Atividade 5
+### [Atividade 5](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade5)
 - **Descrição**: Criar uma página com um DIV simples (500x500) com um h2 dentro dela. Ela deve trocar de cor (regras no CSS usando media queries) de acordo com os tamanhos dos dispositivos, e ao mesmo tempo alterar o texto do h2 mostrando o nome da cor. 
   - Ex.: cinza se for até 420px, laranja se for maior que 420px até 768px e assim por diante. Maior que 1920px use verde.
 
-### Atividade 6
+### [Atividade 6](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade6)
 - **Descrição**: Utilize as caixas de diálogo: Alert, Prompt e Confirm da forma desejada. Utilizar arquivo JS externo.
   1. **Media.html**: Leia o nome e as três notas de um aluno. Calcule e mostre a média aritmética.
   2. **Operacoes.html**: Receba dois números e calcule e mostre:
@@ -27,14 +27,14 @@ Repositório criado para as atividades da disciplina de Programação Web do cur
      - a divisão do primeiro pelo segundo;
      - o resto da divisão do primeiro pelo segundo.
 
-### Atividade 7
+### [Atividade 7](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade7)
 - **Descrição**: Criando um jogo "Pedra, papel ou tesoura" para 2 pessoas. Cada jogador escolhe pedra, papel ou tesoura. O jogador irá jogar com o computador. 
   - **Fases**:
     - a. O usuário faz uma escolha.
     - b. O computador faz uma escolha (método random).
     - c. A partir das duas escolhas determinar o vencedor.
 
-### Atividade 9
+### [Atividade 9](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade9)
 - **Descrição**: Criar uma aplicação para calcular e mostrar o IMC de uma pessoa utilizando funções.
   - **Dados de entrada**:
     - Altura
@@ -46,30 +46,30 @@ Repositório criado para as atividades da disciplina de Programação Web do cur
     - IMC entre 30.0 e 39.9 = obesidade e obesidade = 2
     - IMC maior que 40.0 = obesidade grave e obesidade = 3
 
-### Atividade 10
+### [Atividade 10](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade10)
 - **Descrição**: Criar QUATRO funções, usar arquivo externo para o arquivo JS.
   1. Receber três números e retornar o maior deles.
   2. Receber três números e retorná-los em ordem crescente.
   3. Receber uma string e retornar se ela é palíndromo ou não.
   4. Receber 3 valores, informar se formam um triângulo e qual é o tipo do triângulo.
 
-### Atividade 11
+### [Atividade 11](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade11)
 - **Descrição**: Criar o Objeto `Funcionario1` com propriedades: Matrícula, Nome, Função. Atribuir valores para as propriedades utilizando 3 formas diferentes.
 
-### Atividade 12
+### [Atividade 12](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade12)
 - **Descrição**: JavaScript - Objetos.
   1. Utilizar uma função construtora para o Retângulo receber (x,y) ou seja, base e altura, com um método para calcular a área.
   2. Criar uma Classe tipo Conta, com as propriedades nome correntista, banco, numero da conta e saldo. Criar utilizando herança duas novas classes: Corrente com Saldo Especial e Poupanca com Juros, Data Vencimento.
 
-### Atividade 13
+### [Atividade 13](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade13)
 - **Descrição**: Criar uma página que no carregamento mostra a janela fechada com um título “Abra a Janela”. Se mover com o mouse sobre a imagem da janela fechada, mostra a janela aberta (abre a janela), se sair com o mouse da imagem mostra a janela fechada (fecha a janela). Se clicar sobre a imagem mostra a imagem da janela quebrada (quebra a janela). Colocar um texto em um H1 informando “Janela aberta”, “Janela Fechada” ou “Janela Quebrada”.
 
-### Atividade 14
+### [Atividade 14](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade14)
 - **Descrição**: Criar um Input Text e dois Input Checkbox.
   1. 1º CheckBox - transforma o conteúdo do Input Text em letras maiúsculas.
   2. 2º CheckBox - transforma o conteúdo do Input Text em letras minúsculas.
 
-### Atividade 15
+### [Atividade 15](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade15)
 - **Descrição**: Criar uma função validar no evento onsubmit do Form.
   - Nome não pode ter menos que 10 caracteres.
   - Email deve ter os caracteres @ e .
@@ -77,7 +77,7 @@ Repositório criado para as atividades da disciplina de Programação Web do cur
   - Pesquisa (obrigatório). 
   - Retornar : “Que bom que você voltou a visitar esta página!”, caso contrário: “Volte sempre à está página!”.
 
-### Atividade 16
+### [Atividade 16](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade16)
 - **Descrição**: Criar uma página utilizando JavaScript que execute as seguintes funções:
   - A página principal deve conter uma caixa de seleção com nomes de cursos (os cursos da Fatec Sorocaba).
   - Quando o usuário escolher um curso, deverá aparecer uma caixa confirmando se a janela contendo o curso deve realmente ser aberta.
@@ -85,6 +85,9 @@ Repositório criado para as atividades da disciplina de Programação Web do cur
   - Use o evento `onchange` da tag `<select>` para carregar o curso escolhido.
 
 ### Atividade 17
+#### [Parte 01](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade17_P01) 
+#### [Parte 02](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade17_P02/PwebNodeN/Exercicios)
+#### [Parte 03](https://github.com/Adriana-Akagui/PWEB/tree/main/Atividade17_P03/Exercicios)
 - **Descrição**: Desenvolvimento usando Node.js dividido em 3 fases:
   - Mostrar uma mensagem no console.
   - Diferença entre um código síncrono e outro assíncrono.
